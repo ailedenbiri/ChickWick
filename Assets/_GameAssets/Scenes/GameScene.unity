@@ -283,7 +283,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _orientationTransform: {fileID: 648765205}
-  _movementSpeed: 20
+  _movementSpeed: 50
+  canJump: 1
+  jumpKey: 32
+  jumpForce: 8
+  jumpCooldown: 0.5
+  playerHeight: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1451,7 @@ GameObject:
   - component: {fileID: 1586973807}
   - component: {fileID: 1586973806}
   - component: {fileID: 1586973805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
